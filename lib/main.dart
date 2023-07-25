@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sertan/pages/category_page.dart';
 import 'package:sertan/pages/login_page.dart';
+import 'package:sertan/pages/meals_screen.dart';
 import 'package:sertan/pages/profile_page.dart';
 import 'package:sertan/pages/register_page.dart';
 import 'package:sertan/pages/terms_page.dart';
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
         '/profile-page': (context) => ProfilePage(),
         '/terms-page': (context) => const TermsPage(),
         '/category-page': (context) => const CategoryPageView(),
+        '/meals-page':(context) => const MealsScreen()
       },
     );
   }

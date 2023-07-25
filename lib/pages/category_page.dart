@@ -13,11 +13,7 @@ class _CategoryPageViewState extends State<CategoryPageView> {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (context) {
-        // var model = CategoryController();
-        // model.init();
-        return CategoryController();
-      },
+      create: (context) => CategoryController(),
       child: Consumer<CategoryController>(builder: _buildBody),
     );
   }
